@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interruptor de Lâmpada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="decoration"><i class="fas fa-lightbulb"></i></div>
+    <div class="decoration"><i class="fas fa-bolt"></i></div>
+    <div class="decoration"><i class="fas fa-power-off"></i></div>
+    <div class="decoration"><i class="fas fa-sun"></i></div>
+    
+    <div class="container">
+        <h1>Acenda a luz e veja a mágica acontecer!</h1>
+    
+        <div class="lamp-container">
+            <div class="lamp">
+                <div class="lamp-light"></div>
+                <div class="lamp-bulb">
+                    <div class="lamp-filament"></div>
+                </div>
+                <div class="lamp-body"></div>
+                <div class="lamp-base"></div>
+            </div>
+            <div class="lamp-light"></div>
+            <div class="lamp-halo"></div>
+        </div>
+        
+        <div class="switch-container">
+            <div class="switch-label">INTERRUPTOR</div>
+            <label class="real-switch">
+                <input type="checkbox" id="lampSwitch">
+                <svg class="switch-svg" width="60" height="90" viewBox="0 0 60 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Placa do interruptor -->
+                    <rect x="5" y="10" width="50" height="70" rx="12" fill="#e0e0e0" stroke="#b0b0b0" stroke-width="3"/>
+                    <!-- Botão/tecla do interruptor -->
+                    <rect class="switch-btn" x="15" y="28" width="30" height="34" rx="6" fill="#fafafa" stroke="#bbb" stroke-width="2"/>
+                </svg>
+            </label>
+        </div>
+        
+        <div class="status" id="status">Liga ai que ta um Breu</div>
+        
+        <div class="instructions">
+            <p>Clique no interruptor para ligar ou desligar a lâmpada. Quando ligada, observe o brilho da lâmpada e os raios de luz no ambiente.</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
